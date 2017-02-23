@@ -1,8 +1,6 @@
-
 void setup() {
   size(500, 600);
   background(0);
-  noFill();
 }
 
 

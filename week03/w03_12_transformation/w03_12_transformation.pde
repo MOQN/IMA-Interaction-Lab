@@ -7,9 +7,10 @@ void setup() {
 
 
 void draw() {
+  //background(0);
   pushMatrix();
   translate(width/2,height/2);
-  rotate( radians(frameCount%360) );
+  rotate( radians(frameCount) );
   stroke(255,0,255,30);
   rect(0,0,frameCount*3,frameCount*1);
   popMatrix();
