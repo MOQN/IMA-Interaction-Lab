@@ -6,12 +6,15 @@ void setup() {
 
 
 void draw() {
-  //background(0);
-  stroke(255,255,0);
+  background(0);
+  stroke(255, 255, 0);
+  
   beginShape();
-  vertex(100, 167);
-  vertex(190, 430);
-  vertex(366, 330);
+  vertex(244, 121);
+  vertex(135, 420);
+  vertex(398, 230);
+  vertex(85, 246);
+  vertex(353, 414);
   endShape(CLOSE);
 }
 
