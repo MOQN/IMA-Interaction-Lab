@@ -1,11 +1,14 @@
-int valueFromProcessing;
+// IMA NYU Shanghai
+// Interaction Lab
 
+
+int valueFromProcessing;
 int ledPin = 13;
-int buttonPin = 8;
 
 
 void setup() {
   Serial.begin(9600);
+
   pinMode(ledPin, OUTPUT);
   pinMode(buttonPin, INPUT);
 }
@@ -18,8 +21,7 @@ void loop() {
 
 
   // to send a value to Processing
-  int value = digitalRead(buttonPin);
-  // int value = analogRead(A0);
+  int value = analogRead(A0);
   Serial.write(value);
 
 
@@ -32,8 +34,8 @@ void loop() {
   } else {
     digitalWrite(ledPin, LOW);
   }
-
   
+
   // too fast communication might cause some latency in Processing
   // this delay resolves the issue.
   delay(10);

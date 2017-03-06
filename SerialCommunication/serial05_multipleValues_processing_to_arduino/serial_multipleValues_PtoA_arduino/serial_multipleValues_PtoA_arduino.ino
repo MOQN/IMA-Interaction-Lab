@@ -1,8 +1,6 @@
 // IMA NYU Shanghai
 // Interaction Lab
-// Nov 26 2016
-// MOQN
-// jh.moon@nyu.edu
+
 
 /**
   This example is to send multiple values from Processing to Arduino.
