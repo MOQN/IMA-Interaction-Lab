@@ -36,5 +36,5 @@ void loop() {
   
   // too fast communication might cause some latency in Processing
   // this delay resolves the issue.
-  delay(100);
+  delay(10);
 }

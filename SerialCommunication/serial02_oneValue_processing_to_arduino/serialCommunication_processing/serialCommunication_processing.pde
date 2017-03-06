@@ -1,5 +1,8 @@
-import processing.serial.*;
+// IMA NYU Shanghai
+// Interaction Lab
 
+
+import processing.serial.*;
 
 Serial myPort;
 int valueFromArduino;
@@ -18,28 +21,19 @@ void setup() {
 
 
 void draw() {
+  
   // to read the value from the Arduino
   while ( myPort.available() > 0) {
     valueFromArduino = myPort.read();
   }
   println(valueFromArduino);
-
-  // add your code here
-}
-
-
-
-/* Copy and paste this code into your Arduino sketch!
-
-void setup() {
-  Serial.begin(9600);
-}
-
-void loop() {
-  int sensor = analogRead(A0);
-  Serial.write(sensor);
+ 
   
-  delay(10);
+  // to send a value to the Arduino
+  if (mousePressed) {
+    myPort.write('H');
+  } else {
+    myPort.write('L');
+  }
+  
 }
-
-*/

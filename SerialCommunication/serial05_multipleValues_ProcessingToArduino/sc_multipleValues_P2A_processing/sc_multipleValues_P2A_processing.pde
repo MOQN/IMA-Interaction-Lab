@@ -1,8 +1,5 @@
 // IMA NYU Shanghai
 // Interaction Lab
-// Nov 26 2016
-// MOQN
-// jh.moon@nyu.edu
 
 
 /**
