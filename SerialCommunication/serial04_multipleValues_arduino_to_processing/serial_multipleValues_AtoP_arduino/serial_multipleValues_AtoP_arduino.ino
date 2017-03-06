@@ -18,5 +18,7 @@ void loop() {
   Serial.print(sensor3);
   Serial.println(); // add linefeed after sending the last sensor value
 
+  // too fast communication might cause some latency in Processing
+  // this delay resolves the issue.
   delay(10);
 }

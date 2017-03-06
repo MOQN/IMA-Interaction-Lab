@@ -13,6 +13,8 @@ void setup() {
   background(0);
 
   printArray(Serial.list());
+  // this prints out the list of all available serial ports on your computer.
+  
   myPort = new Serial(this, Serial.list()[ PORT_INDEX ], 9600);
   // WARNING!
   // You will definitely get an error here.
