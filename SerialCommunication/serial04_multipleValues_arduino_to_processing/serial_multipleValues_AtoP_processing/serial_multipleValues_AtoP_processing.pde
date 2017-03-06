@@ -13,8 +13,8 @@ String myString = null;
 Serial myPort;
 
 
-int NUM_OF_VALUES = 3;   // *** CHANGE THIS *** //
-int[] sensorValues; // *** this array stores values from Arduino *** //
+int NUM_OF_VALUES = 3;   /** YOU MUST CHANGE THIS ACCORDING TO YOUR PROJECT **/
+int[] sensorValues;      /** this array stores values from Arduino **/
 
 
 void setup() {

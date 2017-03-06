@@ -17,6 +17,7 @@ void loop() {
   while (Serial.available()) {
     valueFromProcessing = Serial.read();
   }
+  
   if (valueFromProcessing == 'H') {
     digitalWrite(ledPin, HIGH);
   } else if (valueFromProcessing == 'L') {

@@ -25,7 +25,7 @@ void draw() {
   while ( myPort.available() > 0) {
     valueFromArduino = myPort.read();
   }
-  
   // println(valueFromArduino);
+  
   // add your code here
 }

@@ -10,15 +10,13 @@ void loop() {
   int sensor2 = analogRead(A1);
   int sensor3 = analogRead(A2);
 
-  // keey this format carefully
-  // put comma between sensor values
-  // add linefeed after sending the last sensor value
+  // keep this format
   Serial.print(sensor1);
-  Serial.print(",");  
+  Serial.print(",");  // put comma between sensor values
   Serial.print(sensor2);
   Serial.print(",");
   Serial.print(sensor3);
-  Serial.println(); 
+  Serial.println(); // add linefeed after sending the last sensor value
 
-  delay(1);
+  delay(10);
 }

@@ -15,9 +15,9 @@ void setup() {
 
 
 void loop() {
-  // check the differences between these two
-  //Serial.println(100);
-  //Serial.write(100);
+  // check the difference between these two
+  //Serial.println(100);  // send three letters(1,0,0) as ASCII code in three bytes
+  //Serial.write(100);    // send a number(100) in one byte
 
 
   // to send a value to Processing
@@ -34,7 +34,7 @@ void loop() {
   } else {
     digitalWrite(ledPin, LOW);
   }
-  
+
 
   // too fast communication might cause some latency in Processing
   // this delay resolves the issue.
