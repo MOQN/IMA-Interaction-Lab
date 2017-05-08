@@ -24,6 +24,9 @@ float x2, y2, dia2;
 // .
 float x999, y999, dia999;  // OMG! I can't do this!
 
+// when you find yourself repeating your code in this way
+// this is the time to think about using arrays!!!
+
 void setup() {
   size(500, 600);
   noStroke();
